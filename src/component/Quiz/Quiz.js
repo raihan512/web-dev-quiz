@@ -34,7 +34,7 @@ const Quiz = ({ quiz }) => {
 
     }
     return (
-        <div className='bg-black mb-5 mx-20 rounded-md py-5 relative'>
+        <div className='bg-black mb-5 mx-5 md:mx-20 rounded-md py-5 relative'>
             <button
                 className='absolute top-5 right-5'
                 onClick={() => showCorrectAns(correctAnswer)}
@@ -51,7 +51,7 @@ const Quiz = ({ quiz }) => {
 
             </div>
             <div>
-                <form action="" className='grid grid-cols-2 gap-5 m-5'>
+                <form action="" className='grid grid-cols-1 md:grid-cols-2 gap-5 m-5'>
                     {
                         options.map((option, idx) => <Option
                             quizId={id}
