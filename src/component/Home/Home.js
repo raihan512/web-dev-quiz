@@ -6,8 +6,13 @@ const Home = () => {
     const topics = useLoaderData().data;
     return (
         <div>
-            <div className='my-5'>
-                <h1 className='text-2xl md:text-5xl font-bold text-center mx-20'>For testing yourself give test here with our quiz that will justify your expertise about web development technologies. Choose your items from below.</h1>
+            <div
+                className="h-screen bg-cover bg-no-repeat bg-center py-20 bg-[url('/src/images/hero.jpg')] relative"
+            >
+                <div className='bg-slate-600 absolute top-0 left-0 h-full w-full opacity-60'></div>
+                <h1
+                    className='text-2xl md:text-5xl text-white font-bold text-center mx-20 absolute inset-36'
+                >For testing yourself give test here with our quiz that will justify your expertise about web development technologies. Choose your items from below.</h1>
             </div>
 
             {/* Topics Container */}
@@ -16,7 +21,6 @@ const Home = () => {
                     topics.map(topic => <Topic
                         key={topic.id}
                         topic={topic}
-                    // handleTopic={handleTopic}
                     ></Topic>)
                 }
             </div>
