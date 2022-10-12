@@ -1,7 +1,6 @@
-// import React from 'react';
+import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import React, { PureComponent } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 
 const Statistics = () => {
@@ -14,8 +13,8 @@ const Statistics = () => {
     console.log(data);
     return (
         <div className='h-screen flex items-center justify-center'>
-            <BarChart width={500} height={300} barSize={20} data={data} margin={{
-                top: 5, right: 30, left: 20, bottom: 5,
+            <BarChart width={300} height={300} barSize={20} data={data} margin={{
+                top: 25, right: 30, left: 30, bottom: 25,
             }}
             >
                 <XAxis dataKey="name" scale="point" padding={{ left: 10, right: 10 }} />
