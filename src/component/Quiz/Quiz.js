@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Option from '../Option/Option';
 import { EyeIcon } from '@heroicons/react/24/solid'
 import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -31,7 +31,7 @@ const Quiz = ({ quiz }) => {
         <div className='bg-black mb-5 mx-5 md:mx-20 rounded-md py-5 relative'>
             <button
                 className='absolute top-5 right-5'
-                onClick={()=> notify(correctAnswer)}
+                onClick={() => notify(correctAnswer)}
             >
                 <div className='flex items-center'>
                     <span className='mr-2 text-xl text-red-700'>Show Correct Answer</span>
